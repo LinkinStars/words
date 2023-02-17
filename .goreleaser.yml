@@ -30,6 +30,7 @@ brews:
     tap:
       owner: LinkinStars
       name: homebrew-tap
+      token: "{{ .Env.HOMEBREW_TOKEN }}"
     folder: Formula
     homepage: "https://github.com/LinkinStars/words"
     description: "极客就要用终端来背单词"
