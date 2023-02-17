@@ -24,6 +24,15 @@ archives:
   - id: words
     name_template: >-
       {{ .ProjectName }}_{{ .Os }}_{{ .Arch }}
+# https://goreleaser.com/customization/homebrew/
+brews:
+  - name: words
+    tap:
+      owner: LinkinStars
+      name: homebrew-tap
+    folder: Formula
+    homepage: "https://github.com/LinkinStars/words"
+    description: "极客就要用终端来背单词"
 checksum:
   name_template: 'checksums.txt'
 release:
